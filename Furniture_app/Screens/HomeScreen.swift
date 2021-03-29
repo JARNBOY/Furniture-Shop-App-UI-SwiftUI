@@ -47,7 +47,7 @@ struct HomeScreen: View {
                             HStack (spacing: 0) {
                                 ForEach(0 ..< 4) { i in
                                     NavigationLink(
-                                        destination: DetailScreen(),
+                                        destination: DetailScreen(imageName: "chair_\(i+1)"),
                                         label: {
                                             ProductCardView(image: Image("chair_\(i+1)"), size: 210)
                                         })

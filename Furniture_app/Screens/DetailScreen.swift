@@ -9,13 +9,14 @@ import SwiftUI
 
 struct DetailScreen: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    let imageName:String
     var body: some View {
         ZStack {
             Color("Bg")
             ScrollView  {
                 //            Product Image
                 
-                    Image("chair_1")
+                    Image(imageName)
                         .resizable()
                         .aspectRatio(1,contentMode: .fit)
                         .edgesIgnoringSafeArea(.top)
@@ -73,7 +74,7 @@ extension View {
 
 struct DetailScreen_Previews: PreviewProvider {
     static var previews: some View {
-        DetailScreen()
+        DetailScreen(imageName:"chair_1")
     }
 }
 
