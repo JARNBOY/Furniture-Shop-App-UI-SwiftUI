@@ -196,6 +196,7 @@ struct ProductCardView: View {
                 Text("$1299")
                     .font(.title3)
                     .fontWeight(.bold)
+                    .foregroundColor(.black)
             }
         }
         .frame(width: size)

@@ -94,6 +94,7 @@ struct DescriptionView: View {
             Text("Luruxy Swedia \nChair")
                 .font(.title)
                 .fontWeight(.bold)
+                .foregroundColor(.black)
             //                Rating
             HStack (spacing: 4) {
                 ForEach(0 ..< 5) { item in
@@ -102,15 +103,18 @@ struct DescriptionView: View {
                 Text("(4.9)")
                     .opacity(0.5)
                     .padding(.leading, 8)
+                    .foregroundColor(.gray)
                 Spacer()
             }
             
             Text("Description")
                 .fontWeight(.medium)
                 .padding(.vertical, 8)
+                .foregroundColor(.black)
             Text("Luxury Swedian Chair is a contemporary chair based on the virtues of modern craft. it carries on the simplicity and honestly of the archetypical chair.")
                 .lineSpacing(8.0)
                 .opacity(0.6)
+                .foregroundColor(.gray)
             
             //                Info
             HStack (alignment: .top) {
@@ -118,11 +122,15 @@ struct DescriptionView: View {
                     Text("Size")
                         .font(.system(size: 16))
                         .fontWeight(.semibold)
+                        .foregroundColor(.black)
                     Text("Height: 120 cm")
+                        .foregroundColor(.black)
                         .opacity(0.6)
                     Text("Wide: 80 cm")
+                        .foregroundColor(.black)
                         .opacity(0.6)
                     Text("Diameter: 72 cm")
+                        .foregroundColor(.black)
                         .opacity(0.6)
                 }
                 
@@ -134,7 +142,9 @@ struct DescriptionView: View {
                     Text("Treatment")
                         .font(.system(size: 16))
                         .fontWeight(.semibold)
+                        .foregroundColor(.black)
                     Text("Jati Wood, Canvas, \nAmazing Love")
+                        .foregroundColor(.black)
                         .opacity(0.6)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -146,6 +156,7 @@ struct DescriptionView: View {
                 VStack (alignment: .leading) {
                     Text("Colors")
                         .fontWeight(.semibold)
+                        .foregroundColor(.black)
                     HStack {
                         ColorDotView(color: Color.white)
                         ColorDotView(color: Color.black)
