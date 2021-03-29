@@ -42,7 +42,7 @@ struct HomeScreen: View {
                         Text("Popular")
                             .font(.custom("PlayfairDisplay-Bold", size: 24))
                             .padding(.horizontal)
-                            .foregroundColor(.primary)
+                            .foregroundColor(.black)
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack (spacing: 0) {
                                 ForEach(0 ..< 4) { i in
@@ -62,7 +62,7 @@ struct HomeScreen: View {
                         Text("Best")
                             .font(.custom("PlayfairDisplay-Bold", size: 24))
                             .padding(.horizontal)
-                            .foregroundColor(.primary)
+                            .foregroundColor(.black)
                         
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack (spacing: 0) {
