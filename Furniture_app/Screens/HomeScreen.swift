@@ -185,7 +185,7 @@ struct ProductCardView: View {
                 .resizable()
                 .frame(width: size, height: 200 * (size/210))
                 .cornerRadius(20.0)
-            Text("Luxury Swedian chair").font(.title3).fontWeight(.bold)
+            Text("Luxury Swedian chair").font(.title3).fontWeight(.bold).foregroundColor(.black)
             
             HStack (spacing: 2) {
                 ForEach(0 ..< 5) { item in
