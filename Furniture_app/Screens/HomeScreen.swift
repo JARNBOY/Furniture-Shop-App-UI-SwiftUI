@@ -42,7 +42,7 @@ struct HomeScreen: View {
                         Text("Popular")
                             .font(.custom("PlayfairDisplay-Bold", size: 24))
                             .padding(.horizontal)
-                        
+                            .foregroundColor(.primary)
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack (spacing: 0) {
                                 ForEach(0 ..< 4) { i in
@@ -62,6 +62,7 @@ struct HomeScreen: View {
                         Text("Best")
                             .font(.custom("PlayfairDisplay-Bold", size: 24))
                             .padding(.horizontal)
+                            .foregroundColor(.primary)
                         
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack (spacing: 0) {
@@ -185,7 +186,7 @@ struct ProductCardView: View {
                 .resizable()
                 .frame(width: size, height: 200 * (size/210))
                 .cornerRadius(20.0)
-            Text("Luxury Swedian chair").font(.title3).fontWeight(.bold).foregroundColor(.black)
+            Text("Luxury Swedian chair").font(.title3).fontWeight(.bold).foregroundColor(.black).opacity(0.7)
             
             HStack (spacing: 2) {
                 ForEach(0 ..< 5) { item in
